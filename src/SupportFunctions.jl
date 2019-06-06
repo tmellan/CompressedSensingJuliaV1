@@ -6,7 +6,9 @@ function InitSolution(MeasurementMatrix,MeasuredOutput,m)
 
     #Guess a random solution
     GuessedInput=zeros(m)
-    GuessedInput[round(rand(int(m/10))*(m-1)+1,0)]=rand(int(m/10))
+    #round., convert, and ones changed to v1.1 compatibility
+    GuessedInput[round.(Int, rand(convert(Int, m/10))*(m-1)+ones(Int, convert(Int, m/10)))]=rand(convert.(Int, m/10))
+    
 
     #project the guessed solution into the space of exact answers
     GuessedInput=FindSol(MeasuredOutput,
