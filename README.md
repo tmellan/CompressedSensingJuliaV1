@@ -3,7 +3,7 @@
 [![Documentation Status](https://readthedocs.org/projects/compressedsensing/badge/?version=latest)](https://readthedocs.org/projects/compressedsensing/?badge=latest)
 
 
-*The original original package is dahlend is not working due to changes in Julia. I'll try to update for Julia v1.1  compatibility in this fork.*
+*The original package by dahlend appears not to be working with current Julia due to deprecated or modified features. I'll try to update for Julia v1.1  compatibility in this fork.*
 
 This package contains several useful algorithms for compressed sensing, multiple measurement vectors, and sparse blind source separation.
 
